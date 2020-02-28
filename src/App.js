@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDom from "react-dom";
 import {Route, Link} from "react-router-dom";
 import Header from "./components/Header.js";
 import WelcomePage from "./components/WelcomePage";
@@ -10,8 +9,12 @@ export default function App() {
   return (
     <main>
       <Header />
-      <Link to='/'>Home</Link>
-      <Link to='/CharacterList'>Characters</Link>
+
+      <div className='link-holder'>
+      <Link className='nav-link' to='/'>Home</Link>
+      <Link className='nav-link' to='/CharacterList'>Characters</Link>
+      </div>
+
       <Route exact path='/'>
         <WelcomePage/>
       </Route>

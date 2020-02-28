@@ -37,3 +37,15 @@ main {
 header h1 {
   text-align: center;
 }
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  margin: 1%;
+  text-align: center;
+}
+
+.link-holder{
+  display: flex;
+  justify-content: center;
+}
