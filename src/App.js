@@ -21,6 +21,9 @@ export default function App() {
       <Route path='/CharacterList'>
         <CharacterList/>
       </Route>
+      {/* <Route path='/LocationsList:charID'>
+        <LocationList/>
+      </Route> */}
       
     </main>
   );

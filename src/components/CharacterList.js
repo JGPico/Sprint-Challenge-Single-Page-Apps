@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import styled from "styled-components";
+//import {Link} from "react-router-dom";
 import CharacterCard from "./CharacterCard";
 //import SearchForm from "./SearchForm";
 
@@ -58,7 +59,9 @@ export default function CharacterList() {
            name={char.name}
            species={char.species}
            image={char.image}
+           location={char.location}
            />
+
         )
       })}
       </CardHolder>
