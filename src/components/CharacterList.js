@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import styled from "styled-components";
 import CharacterCard from "./CharacterCard";
+
+const CardHolder = styled.div`
+display: flex;
+flex-flow: wrap row;
+`;
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -20,6 +26,7 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
+      <CardHolder>
       {characterList.map(char => {
         return (
           <CharacterCard 
@@ -30,6 +37,7 @@ export default function CharacterList() {
            />
         )
       })}
+      </CardHolder>
     </section>
   );
 }
