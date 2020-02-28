@@ -29,6 +29,9 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 > Answer:
 
+    Client side routing allows a user to navigate to different parts of a webpage without having to refresh the browser.
+    It is generally slower to initially load all the assets, but faster to navigate once loaded.
+
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
